@@ -9,7 +9,7 @@ public class Hold {
     int count = 0;
 
     public Hold() {
-        this.spillerListe = new Fodboldspiller[3];
+        this.spillerListe = new Fodboldspiller[10];
     }
 
     public void tilFøjSpiller(String fornavn, String efternavn, double højde, int vægt) {
@@ -27,7 +27,7 @@ public class Hold {
 
         DecimalFormat df = new DecimalFormat("#.##");
         df.setRoundingMode(RoundingMode.UP);
-        return df.format(sumOfHeight/spillerListe.length);
+        return df.format(sumOfHeight/count);
 
     }
 
